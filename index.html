@@ -7,15 +7,39 @@
     <body>
 
         <script src="scripts/script.js"></script>
-        
-        <input class="inputClass" id="idInput" placeholder="Insira seu compromisso" />
-        <p></p>
-        <button class="buttonClassSalvar" onclick="
-        
-            salvarCompromisso();
-        
-        " >Salvar</button>
+        <p>Tarefas:
+            <input class="inputClass" id="idInput" placeholder="Insira seu compromisso" />
+            
+            <button class="buttonClassSalvar" onclick="
+            
+                salvarCompromisso();
+            
+            " >Salvar</button>
 
+            <button class="buttonClassGuardar"  onclick="
+            
+                guardarItems();
+            
+            " >Guardar</button>
+    
+            <button class="buttonClassRecuperar" onclick="
+                    
+                recuperarItems();
+
+            " >Recuperar</button>
+
+            <button class="buttonClassApagaRepository" onclick="
+                    
+                apagarRepository();
+
+            " >Excluir</button>
+
+
+        </p>
+        <p></p>
+        
+
+        <p id="pExibe"></p>
 
     </body>
 
