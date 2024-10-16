@@ -8,7 +8,15 @@
 
         <script src="scripts/script.js"></script>
         <p>Tarefas:
-            <input class="inputClass" id="idInput" placeholder="Insira seu compromisso" />
+            <input class="inputClass" id="idInput" placeholder="Insira seu compromisso" 
+            onkeydown="            
+           if (event.key === 'Enter'){
+
+                salvarCompromisso();
+            
+            }"/>
+            
+            
             
             <button class="buttonClassSalvar" onclick="
             
